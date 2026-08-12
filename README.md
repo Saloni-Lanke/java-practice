@@ -1,10 +1,9 @@
 # Java Practice
 
-Welcome to my Java Practice repository.
+Welcome to my Java Practice repository! 
+This repository contains my Java learning journey from beginner to advanced level through daily practice, problem-solving, and mini projects.
 
-This repository contains my Java learning journey from beginner to advanced.
-
-## Topics Covered
+# Topics Covered
 
 - Java Basics
 - Variables & Data Types
@@ -15,22 +14,48 @@ This repository contains my Java learning journey from beginner to advanced.
 - Pattern Programs
 - Strings
 - Arrays
-- 2D Arrays (Matrix)
+- 2D Arrays
 - Searching
 - Sorting
-- Recursion
+- Methods
 - Object-Oriented Programming (OOP)
 - Exception Handling
+- Collections
+- File Handling
+- Lambda Expressions
+- Advanced Java Concepts
 
-## Progress
+# Mini Projects
 
-- ✔ 100+ Java Programs (Growing Daily)
-- ✔ Daily Practice
-- ✔ Regular GitHub Commits
+### Student Management System
+A console-based Java mini project that allows users to:
 
-## Goal
+- Add students
+- View students
+- Search students
+- Update student details
+- Delete students
+- Exit the application
 
-To build a strong Java foundation and become a Java Full Stack Developer.
+# Technologies Used
 
-## Author
+- Java
+- ArrayList
+- Scanner
+- OOP Concepts
+
+# Learning Progress
+
+- 100+ Java programs
+- Daily Java practice
+- Regular GitHub commits
+- 1 Java mini project completed
+
+# Goal
+My goal is to build a strong foundation in Java, improve my problem-solving skills, and become a skilled Software Developer / Java Full Stack Developer.
+
+# Author
+
 **Saloni Lanke**
+
+⭐ This repository represents my continuous Java learning journey.
