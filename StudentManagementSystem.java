@@ -42,7 +42,8 @@ public class StudentManagementSystem {
             System.out.println("1. Add Student");
             System.out.println("2. View Students");
             System.out.println("3. Search Student");
-            System.out.println("4. Exit");
+            System.out.println("4. Update Student");
+            System.out.println("5. Exit");
 
             System.out.print("Enter your choice: ");
             choice = sc.nextInt();
@@ -113,6 +114,43 @@ public class StudentManagementSystem {
 
             else if (choice == 4) {
 
+                System.out.print("Enter Student ID to Update: ");
+                int updateId = sc.nextInt();
+
+                sc.nextLine();
+
+                boolean found = false;
+
+                for (Student s : students) {
+
+                    if (s.id == updateId) {
+
+                        System.out.print("Enter New Name: ");
+                        s.name = sc.nextLine();
+
+                        System.out.print("Enter New Marks: ");
+                        s.marks = sc.nextInt();
+
+                        System.out.println("Student Updated Successfully!");
+
+                        found = true;
+
+                        break;
+
+                    }
+
+                }
+
+                if (!found) {
+
+                    System.out.println("Student Not Found!");
+
+                }
+
+            }
+
+            else if (choice == 5) {
+
                 System.out.println("Thank you!");
 
             }
@@ -123,7 +161,7 @@ public class StudentManagementSystem {
 
             }
 
-        } while (choice != 4);
+        } while (choice != 5);
 
         sc.close();
 
