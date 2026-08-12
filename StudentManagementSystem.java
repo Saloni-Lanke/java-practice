@@ -1,31 +1,30 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class Student {
+public class Main {
 
-    int id;
-    String name;
-    int marks;
+    static class Student {
 
-    Student(int id, String name, int marks) {
+        int id;
+        String name;
+        int marks;
 
-        this.id = id;
-        this.name = name;
-        this.marks = marks;
+        Student(int id, String name, int marks) {
 
+            this.id = id;
+            this.name = name;
+            this.marks = marks;
+
+        }
+
+        void display() {
+
+            System.out.println("ID: " + id);
+            System.out.println("Name: " + name);
+            System.out.println("Marks: " + marks);
+
+        }
     }
-
-    void display() {
-
-        System.out.println("ID: " + id);
-        System.out.println("Name: " + name);
-        System.out.println("Marks: " + marks);
-
-    }
-
-}
-
-public class StudentManagementSystem {
 
     public static void main(String[] args) {
 
@@ -74,10 +73,21 @@ public class StudentManagementSystem {
 
                 System.out.println("\nStudent Details:");
 
-                for (Student s : students) {
+                if (students.isEmpty()) {
 
-                    s.display();
+                    System.out.println("No students found.");
 
+                }
+
+                else {
+
+                    for (Student s : students) {
+
+                        s.display();
+
+                        System.out.println();
+
+                    }
                 }
 
             }
@@ -102,7 +112,6 @@ public class StudentManagementSystem {
                         break;
 
                     }
-
                 }
 
                 if (!found) {
@@ -139,7 +148,6 @@ public class StudentManagementSystem {
                         break;
 
                     }
-
                 }
 
                 if (!found) {
@@ -170,7 +178,6 @@ public class StudentManagementSystem {
                         break;
 
                     }
-
                 }
 
                 if (!found) {
@@ -198,5 +205,4 @@ public class StudentManagementSystem {
         sc.close();
 
     }
-
 }
