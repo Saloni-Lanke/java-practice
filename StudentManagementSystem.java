@@ -22,6 +22,7 @@ class Student {
         System.out.println("Marks: " + marks);
 
     }
+
 }
 
 public class StudentManagementSystem {
@@ -32,5 +33,23 @@ public class StudentManagementSystem {
 
         Scanner sc = new Scanner(System.in);
 
+        System.out.print("Enter Student ID: ");
+        int id = sc.nextInt();
+
+        sc.nextLine();
+
+        System.out.print("Enter Student Name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter Marks: ");
+        int marks = sc.nextInt();
+
+        Student s = new Student(id, name, marks);
+
+        students.add(s);
+
+        System.out.println("Student Added Successfully!");
+
     }
+
 }
