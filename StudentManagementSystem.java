@@ -50,6 +50,10 @@ public class StudentManagementSystem {
 
         System.out.println("Student Added Successfully!");
 
+        System.out.println("\nStudent Details:");
+
+        s.display();
+
     }
 
 }
