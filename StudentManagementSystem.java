@@ -33,59 +33,67 @@ public class StudentManagementSystem {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("===== Student Management System =====");
+        int choice;
 
-        System.out.println("1. Add Student");
-        System.out.println("2. View Students");
-        System.out.println("3. Exit");
+        do {
 
-        System.out.print("Enter your choice: ");
-        int choice = sc.nextInt();
+            System.out.println("\n===== Student Management System =====");
 
-        if (choice == 1) {
+            System.out.println("1. Add Student");
+            System.out.println("2. View Students");
+            System.out.println("3. Exit");
 
-            System.out.print("Enter Student ID: ");
-            int id = sc.nextInt();
+            System.out.print("Enter your choice: ");
+            choice = sc.nextInt();
 
-            sc.nextLine();
+            if (choice == 1) {
 
-            System.out.print("Enter Student Name: ");
-            String name = sc.nextLine();
+                System.out.print("Enter Student ID: ");
+                int id = sc.nextInt();
 
-            System.out.print("Enter Marks: ");
-            int marks = sc.nextInt();
+                sc.nextLine();
 
-            Student s = new Student(id, name, marks);
+                System.out.print("Enter Student Name: ");
+                String name = sc.nextLine();
 
-            students.add(s);
+                System.out.print("Enter Marks: ");
+                int marks = sc.nextInt();
 
-            System.out.println("Student Added Successfully!");
+                Student s = new Student(id, name, marks);
 
-        }
+                students.add(s);
 
-        else if (choice == 2) {
-
-            System.out.println("\nStudent Details:");
-
-            for (Student s : students) {
-
-                s.display();
+                System.out.println("Student Added Successfully!");
 
             }
 
-        }
+            else if (choice == 2) {
 
-        else if (choice == 3) {
+                System.out.println("\nStudent Details:");
 
-            System.out.println("Thank you!");
+                for (Student s : students) {
 
-        }
+                    s.display();
 
-        else {
+                }
 
-            System.out.println("Invalid Choice!");
+            }
 
-        }
+            else if (choice == 3) {
+
+                System.out.println("Thank you!");
+
+            }
+
+            else {
+
+                System.out.println("Invalid Choice!");
+
+            }
+
+        } while (choice != 3);
+
+        sc.close();
 
     }
 
