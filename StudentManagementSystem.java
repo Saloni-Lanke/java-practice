@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 class Student {
 
     int id;
@@ -17,6 +20,17 @@ class Student {
         System.out.println("ID: " + id);
         System.out.println("Name: " + name);
         System.out.println("Marks: " + marks);
+
+    }
+}
+
+public class StudentManagementSystem {
+
+    public static void main(String[] args) {
+
+        ArrayList<Student> students = new ArrayList<>();
+
+        Scanner sc = new Scanner(System.in);
 
     }
 }
